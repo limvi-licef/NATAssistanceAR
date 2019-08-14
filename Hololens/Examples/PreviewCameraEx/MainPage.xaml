@@ -1,0 +1,60 @@
+﻿<!--
+    Author: Anthony Melin
+    Date: 2019 August 14
+-->
+
+<Page
+    x:Class="PreviewCameraEx.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PreviewCameraEx"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Video"  Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" FontSize="50" HorizontalAlignment="Center"/>
+        <TextBlock Text="Frames" Grid.Row="0" Grid.Column="5"                     FontSize="50" HorizontalAlignment="Center"/>
+        
+        <CaptureElement Name="VideoWidget"  Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2"/>
+        <Image          Name="FrameWidget1" Grid.Row="1" Grid.Column="5" Grid.ColumnSpan="1"/>
+        <Image          Name="FrameWidget2" Grid.Row="2" Grid.Column="5" Grid.ColumnSpan="1"/>
+
+        <TextBlock Text="Capture"                                             Grid.Row="3" Grid.Column="0"                        FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Name="StartCapture" Content="Start" Click="StartCaptureEvent" Grid.Row="3" Grid.Column="1" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+        <Button Name="StopCapture"  Content="Stop"  Click="StopCaptureEvent"  Grid.Row="3" Grid.Column="2" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+
+        <TextBlock Text="Video"                                                 Grid.Row="4" Grid.Column="0"                         FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Name="DisplayVideo" Content="Display" Click="DisplayVideoEvent" Grid.Row="4" Grid.Column="1" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+        <Button Name="HideVideo"    Content="Hide"    Click="HideVideoEvent"    Grid.Row="4" Grid.Column="2" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+
+        <TextBlock Text="Frame"                                                              Grid.Row="5" Grid.Column="0"                        FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Name="CaptureFrame"     Content="Capture"      Click="CaptureFrameEvent"     Grid.Row="5" Grid.Column="1" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+        <Button Name="DisplayFrame"     Content="Display"      Click="DisplayFrameEvent"     Grid.Row="5" Grid.Column="2" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+        <Button Name="HideFrame"        Content="Hide"         Click="HideFrameEvent"        Grid.Row="5" Grid.Column="3" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+
+        <TextBlock Text="Jpeg"                                                              Grid.Row="6" Grid.Column="0"                        FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Name="CaptureFrameJpeg"  Content="Capture"  Click="CaptureFrameJpegEvent"   Grid.Row="6" Grid.Column="1" Width="75" Height="40" FontSize="15" HorizontalAlignment="Center"/>
+
+    </Grid>
+</Page>

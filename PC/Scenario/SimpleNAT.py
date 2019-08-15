@@ -1,3 +1,8 @@
+"""
+    Author: Anthony Melin
+    Date: 2019 August 14
+"""
+
 # -*- coding: utf-8 -*-
 
 
@@ -12,6 +17,8 @@ import glm
 import time
 
     
+####################################################################
+####################################################################
 ####################################################################
 class SimpleNATDebug(BaseScenario):
     
@@ -130,6 +137,8 @@ class SimpleNATDebug(BaseScenario):
     
 
 ####################################################################
+####################################################################
+####################################################################
 class SimpleNATRelease(SimpleNATDebug):
     
     
@@ -163,15 +172,15 @@ class SimpleNATRelease(SimpleNATDebug):
             self.socket.Draw("update_area", "left", "red")
         elif not self.left_error and self.left_color == "red":
             self.left_color = "gray"
-            self.socket.Draw("update_area", "left" "gray")
+            self.socket.Draw("update_area", "left", "gray")
             
         # right area
-        if self.right_error:
+        if self.right_error and self.right_color == "gray":
             self.right_color = "red"
             self.socket.Draw("update_area", "right", "red")
         elif not self.right_error and self.right_color == "red":
             self.right_color = "gray"
-            self.socket.Draw("update_area", "right" "gray")
+            self.socket.Draw("update_area", "right", "gray")
             
     
     ################################################################
@@ -204,71 +213,44 @@ class SimpleNATRelease(SimpleNATDebug):
         
         
 ####################################################################
+####################################################################
+####################################################################
 class SimpleNATReleaseTimer(SimpleNATRelease):
     
-    timer_left = None
-    timer_right = None
+    timer_left = time.time()
+    timer_right = time.time()
     delay = 5
         
     ################################################################
     def SortObjects(self):
-        
-        left_area_error = False
-        right_area_error = False
             
-        # update areas color
-        for obj, pos in self.obj.items():
-            
-            # object belonging to left area
-            if obj in self.left_objects:
-                # if it's in right area, get error
-                if self.Length(obj, "Right") < self.area_range:
-                    right_area_error = True
-                    
-            # object belonging to right area
-            if obj in self.right_objects:
-                # if it's in right area, get error
-                if self.Length(obj, "Left") < self.area_range:
-                    left_area_error = True
-                    
-            # distractors objects
-            if obj in self.distractors:
-                # if it's in right area, get error
-                if self.Length(obj, "Right") < self.area_range:
-                    right_area_error = True
-                # if it's in right area, get error
-                elif self.Length(obj, "Left") < self.area_range:
-                    left_area_error = True
-                    
-        self.ErrorTreatment(left_area_error, right_area_error)
+        self.left_error = False
+        self.right_error = False
+    
+        SimpleNATDebug.SortObjects(self)
         
-                    
+        self.CheckErrorDelay()
+        
+        self.AreaUpdate()
+        
+    
     ################################################################
-    def ErrorTreatment(self, left, right):
+    def CheckErrorDelay(self):
         
-        # update timers
-        if not left:
+        # calc delay in second
+        left_delay = time.time() - self.timer_left
+        right_delay = time.time() - self.timer_right
+        
+        # timer is updated if there is not error detected
+        if not self.left_error:
             self.timer_left = time.time()
-        if not right:
-            self.timer_right = time.time()
-            
-            
-        # left area
-        if time.time() - self.timer_left > self.delay:
-            if self.left_color != "red":
-                self.left_color = "red"
-                self.socket.Draw("update_area", "left", "red")
-                
-        elif self.left_color != "gray":
-            self.left_color = "gray"
-            self.socket.Draw("update_area", "left", "gray")
-            
+        # cancel the error as it occurs for less than 5 seconds
+        elif left_delay < 5:
+            self.left_error = False
+        # else the the error will still be treated in AreaUpdate()
+        
         # right area
-        if time.time() - self.timer_right > self.delay:
-            if self.right_color != "red":
-                self.right_color = "red"
-                self.socket.Draw("update_area", "right", "red")
-                
-        elif self.right_color != "gray":
-            self.right_color = "gray"
-            self.socket.Draw("update_area", "right", "gray")
+        if not self.right_error:
+            self.timer_right = time.time()
+        elif self.right_error and right_delay < 5:
+            self.right_error = False

@@ -38,10 +38,10 @@ namespace Application
         //###################################################################################################################
         public MainApp(ApplicationOptions opts) : base(opts)
         {
-            _ip = "192.168.137.1";
+           /* _ip = "192.168.137.1";
             _cameraSocketPort = "9999";
             _rayCollisionSocketPort = "9998";
-            _displaySocketPort = "9997";
+            _displaySocketPort = "9997";*/
         }
 
 

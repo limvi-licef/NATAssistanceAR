@@ -31,13 +31,14 @@ The two following section describe how to compile the PC and the Hololens applic
 - Execute the fo
 - In the file PC > Tensorflow > ObjectDetection.py, update the paths in the function "tensorflow_path" where "WRITE THE PATH OF TENSORFLOW ON THE COMPUTER HERE" is written to the TensorFlow/Models local directory.
 - In Jupyter, open PC > App.ipynb:
-  - In the "Global variables > Model files and classes" section: set the variable "NUM_CLASSES" to 7.
+  - In the "Global variables > Model files and classes" section: set the variable "NUM_CLASSES" to 7 and "MODEL_DIRECTORY" to the path of where your trained model is (you can use for instance the "ModelsForNAT > model_3" provided in this repository)
   - In the "Global variables > Host and port" section: set the "HOST" variable to the local IP.
   - In the "Global variables > Scenario" section: set the "scenario" variable to the function related to the NAT scenario you would like to use. To use the aforementioned scenario, use the function "SimpleNATRelease()". The available scenario are listed in PC > Scenario.
 
 ### Hololens application
 - Open Hololens > HoloObjectDetection.sln with Microsoft visual studio 2017.
 - If the project "Projects > 1 - Simple NAT" is not loaded, then right click on the project and click "Download update"
+- In the file ObjectDetectionMain.cs, uncomment the lines 41 to 44, and set the "\_ip" variable to the IP of the computer running the PC application. 
 - Compile and deploy the "Projects > 1 - Simple NAT" project in x86 / release to the Device (i.e. the Hololens)
 
 ## Run

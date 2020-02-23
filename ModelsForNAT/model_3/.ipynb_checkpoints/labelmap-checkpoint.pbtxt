@@ -1,0 +1,28 @@
+item {
+    id: 1
+    name: 'Left'
+}
+item {
+    id: 2
+    name: 'Right'
+}
+item {
+    id: 3
+    name: 'Notebook'
+}
+item {
+    id: 4
+    name: 'Fork'
+}
+item {
+    id: 5
+    name: 'Pen'
+}
+item {
+    id: 6
+    name: 'Lunchbox'
+}
+item {
+    id: 7
+    name: 'Bottle'
+}

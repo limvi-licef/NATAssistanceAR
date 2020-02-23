@@ -42,5 +42,6 @@ The two following section describe how to compile the PC and the Hololens applic
 - Compile and deploy the "Projects > 1 - Simple NAT" project in x86 / release to the Device (i.e. the Hololens)
 
 ## Run
-- Run the App.ipynb in Jupyter.
-- 
+- On the Hololens: run the SimpleNAT application
+- On the PC: run the App.ipynb in Jupyter.
+- That should be it! On the PC, you should see the Hololens webcam stream with the detected objects.

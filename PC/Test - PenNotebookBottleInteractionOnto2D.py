@@ -23,7 +23,7 @@ import numpy as np
 # # Global variables
 # ## Model files and classes
 
-MODEL_DIRECTORY = "E:/Projet annuel M1/HoloObjectDetection/PC/models/model_3"
+MODEL_DIRECTORY = "MODEL_DIRECTORY"
 
 GRAPH = MODEL_DIRECTORY + "/frozen_inference_graph.pb"
 LABELS = MODEL_DIRECTORY + "/labelmap.pbtxt"

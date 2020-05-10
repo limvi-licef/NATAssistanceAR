@@ -9,7 +9,7 @@
 # # Import
 
 
-from Tensorflow.RemoteCam import RemoteCam
+from RemoteCam.RemoteCam import RemoteCam
 from Tensorflow.ObjectDetection import *
 from Tensorflow.ObjectDetector import ObjectDetector
 

@@ -1,0 +1,19 @@
+body {
+    background-color: gray;
+}
+
+#videoElement {
+	width: 640px;
+	height: 480px;
+	background-color: #666;
+}
+
+#frameCanvas {
+	width: 640px;
+	height: 480px;
+	background-color: #666;
+}
+
+#websocketContainer {
+    display: flex;
+}

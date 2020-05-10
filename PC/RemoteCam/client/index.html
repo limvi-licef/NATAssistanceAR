@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Display Webcam Stream</title>
+		<link href="style.css" rel="stylesheet">
+	</head>
+ 
+	<body>
+        
+		<div id="cameraContainer">
+            Camera
+            <select id="resolutionSelector">
+                <option value="HD"> 1280x720 HD </option>
+                <option value="FullHD"> 1920x1080 FullHD </option>
+                <option value="Low"> 640x480 Low </option>
+            </select>
+			<button id="runReset" onclick="runReset();"> Run </button>
+			<button id="snapshot" onclick="snapshot();"> Snapshot </button>
+			<button id="play" onclick="play();"> Play </button>
+			<button id="stop" onclick="stop();"> Stop </button>
+			<br>
+			Jpg loss
+			<input type="number" step="0.05" min="0.05" max="1.0" id="loss" name="loss" value="0.3" size="5">
+		</div>
+
+		<div id="websocketContainer">
+            WebSocket &nbsp;
+			<div id="websocketAdress">
+				<input id="host" name="host" value="" size="13">
+                <script>
+                    document.getElementById("host").value = window.location.hostname;
+                </script>
+				<input id="port" name="port" value="9999" size="3">
+			</div>
+			<button id="connectionButton" onclick="openSocket();"> Connection </button>
+			<button id="closeButton" onclick="closeSocket();"> Close </button>
+		</div>
+        
+        <div id="cameraFrame"></div>
+        <script src="camera.js"></script>
+        <script src="socket.js"></script>
+        
+	</body>
+</html>

@@ -34,7 +34,7 @@ class PenNearNotebookOnto2D(BaseScenario2D):
     """######################################################################"""
     def Action(self):
         
-        # iterates on dtected objects 
+        # iterates on detected objects 
         for obj, pos in self.obj.items():
             
             # if object is in ontology

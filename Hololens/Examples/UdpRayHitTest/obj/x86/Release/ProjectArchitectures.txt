@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\UdpRayHitTest\7 - UdpRayHitTest.csproj;x86

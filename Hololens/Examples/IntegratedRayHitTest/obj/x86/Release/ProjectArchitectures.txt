@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\IntegratedRayHitTest\3.2 - IntegratedRayHitTest.csproj;x86

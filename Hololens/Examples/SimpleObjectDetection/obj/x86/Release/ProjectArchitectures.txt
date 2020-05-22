@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\SimpleObjectDetection\8 - SimpleObjectDetection.csproj;x86

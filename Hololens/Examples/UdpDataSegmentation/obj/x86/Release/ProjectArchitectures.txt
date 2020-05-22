@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\UdpDataSegmentation\5.1 - UdpDataSegmentation.csproj;x86

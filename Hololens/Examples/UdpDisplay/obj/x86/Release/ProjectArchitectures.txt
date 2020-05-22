@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\UdpDisplay\6 - UdpDisplay.csproj;x86

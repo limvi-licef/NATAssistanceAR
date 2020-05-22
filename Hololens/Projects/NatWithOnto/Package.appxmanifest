@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Package
+  xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
+  xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest"
+  xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2"
+  xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3"
+  xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6"
+  xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10"
+  xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4"
+  IgnorableNamespaces="uap mp uap2 uap3 uap6 iot uap4">
+
+  <Identity
+    Name="3ad4b886-311b-4ae8-bda9-113b3ed821b0"
+    Publisher="CN=Anthony"
+    Version="1.0.0.0" />
+
+  <mp:PhoneIdentity PhoneProductId="3ad4b886-311b-4ae8-bda9-113b3ed821b0" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+
+  <Properties>
+    <DisplayName>NatWithOnto</DisplayName>
+    <PublisherDisplayName>Anthony</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+  </Dependencies>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+      Executable="$targetnametoken$.exe"
+      EntryPoint="NatWithOnto.App">
+      <uap:VisualElements
+        DisplayName="NatWithOnto"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="NatWithOnto"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer"/>
+    <Capability Name="privateNetworkClientServer"/>
+    <uap2:Capability Name="spatialPerception"/>
+    <uap:Capability Name="objects3D"/>
+    <uap:Capability Name="blockedChatMessages"/>
+    <uap3:Capability Name="backgroundMediaPlayback"/>
+    <uap:Capability Name="userAccountInformation"/>
+    <uap2:Capability Name="phoneCallHistoryPublic"/>
+    <uap6:Capability Name="graphicsCapture"/>
+    <iot:Capability Name="systemManagement"/>
+    <uap4:Capability Name="offlineMapsManagement"/>
+    <Capability Name="codeGeneration"/>
+    <uap3:Capability Name="userNotificationListener"/>
+    <uap:Capability Name="contacts"/>
+    <uap:Capability Name="sharedUserCertificates"/>
+    <uap:Capability Name="picturesLibrary"/>
+    <uap:Capability Name="enterpriseAuthentication"/>
+    <uap:Capability Name="musicLibrary"/>
+    <uap:Capability Name="voipCall"/>
+    <uap:Capability Name="appointments"/>
+    <uap:Capability Name="removableStorage"/>
+    <uap3:Capability Name="remoteSystem"/>
+    <uap4:Capability Name="userDataTasks"/>
+    <uap:Capability Name="videosLibrary"/>
+    <uap:Capability Name="phoneCall"/>
+    <iot:Capability Name="lowLevelDevices"/>
+    <Capability Name="allJoyn"/>
+    <uap:Capability Name="chat"/>
+    <DeviceCapability Name="webcam"/>
+    <DeviceCapability Name="microphone"/>
+    <DeviceCapability Name="pointOfService"/>
+    <DeviceCapability Name="proximity"/>
+    <DeviceCapability Name="gazeInput"/>
+    <DeviceCapability Name="location"/>
+    <DeviceCapability Name="bluetooth"/>
+    <DeviceCapability Name="lowLevel"/>
+  </Capabilities>
+</Package>

@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\FrameReaderCameraEx\1.1 - FrameReaderCameraEx.csproj;x86

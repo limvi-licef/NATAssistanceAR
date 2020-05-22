@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\SocketConnection\4 - SocketConnection.csproj;x86

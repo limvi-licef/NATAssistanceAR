@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\BasicDisplay\2 - BasicDisplay.csproj;x86

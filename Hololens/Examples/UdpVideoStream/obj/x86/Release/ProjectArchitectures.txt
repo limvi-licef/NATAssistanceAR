@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\UdpVideoStream\5.2 - UdpVideoStream.csproj;x86

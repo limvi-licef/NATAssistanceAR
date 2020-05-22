@@ -1,0 +1,49 @@
+﻿<!--
+    Author: Anthony Melin
+    Date: 2019 August 14
+-->
+    
+<Page
+    x:Class="FrameReaderCameraEx.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FrameReaderCameraEx"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Image x:ConnectionId='2' Name="imageElement1" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Image x:ConnectionId='3' Name="imageElement2" Grid.Column="2" Grid.ColumnSpan="2"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Reading" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"/>
+        <Button x:ConnectionId='4'    Grid.Row="1" Grid.Column="1" Name="startButton" Content="Start"                           HorizontalAlignment="Center" Width="200" Height="80"/>
+        <Button x:ConnectionId='5'    Grid.Row="1" Grid.Column="2" Name="stopButton"  Content="Stop"                            HorizontalAlignment="Center" Width="200" Height="80"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="Video display" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"/>
+        <Button x:ConnectionId='6'    Grid.Row="2" Grid.Column="1" Name="playVideoButton" Content="Play"                        HorizontalAlignment="Center" Width="200" Height="80"/>
+        <Button x:ConnectionId='7'    Grid.Row="2" Grid.Column="2" Name="stopVideoButton" Content="Stop"                        HorizontalAlignment="Center" Width="200" Height="80"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Frame display" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"/>
+        <Button x:ConnectionId='8'    Grid.Row="3" Grid.Column="1" Name="Button"     Content="Get"                    HorizontalAlignment="Center" Width="200" Height="80"/>
+        <Button x:ConnectionId='9'    Grid.Row="3" Grid.Column="2" Name="hideButton" Content="Hide"                   HorizontalAlignment="Center" Width="200" Height="80"/>
+        
+    </Grid>
+    
+</Page>
+

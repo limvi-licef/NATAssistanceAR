@@ -1,0 +1,1 @@
+C:\Users\Anthony\Documents\NATAssistanceAR\Hololens\Examples\PreviewCameraEx\1.2 - PreviewCameraEx.csproj;x86

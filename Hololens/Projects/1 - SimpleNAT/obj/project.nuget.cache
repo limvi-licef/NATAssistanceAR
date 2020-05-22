@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "o+ikSLZL+SCZD49oh3K//S3Wrv0i6XpVyHXzRUfzbwefp2Sgf7Af0Jtg8f+NHViwNPZt1ZVzE0lEP9T6JqUHTQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Anthony\\Documents\\NATAssistanceAR\\Hololens\\Projects\\1 - SimpleNAT\\1 - SimpleNAT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Anthony\\.nuget\\packages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.0\\microsoft.netcore.platforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\microsoft.netcore.universalwindowsplatform\\6.2.10\\microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-arm.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-arm.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-arm.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-arm.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-arm64.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-arm64.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-arm64.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-arm64.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x64-aot.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x64.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-x64.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x64.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x64.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x64.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x64.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86-aot.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.compiler\\2.2.8-rel-28605-00\\runtime.win10-x86.microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x86.microsoft.net.native.sharedlibrary\\2.2.7-rel-28605-00\\runtime.win10-x86.microsoft.net.native.sharedlibrary.2.2.7-rel-28605-00.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\\2.2.10\\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-x86.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",
+    "C:\\Users\\Anthony\\.nuget\\packages\\urhosharp.sharpreality\\1.8.71\\urhosharp.sharpreality.1.8.71.nupkg.sha512"
+  ],
+  "logs": []
+}

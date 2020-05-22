@@ -1,0 +1,2 @@
+Hololens UrhoSharp default capabilities
+Private networks

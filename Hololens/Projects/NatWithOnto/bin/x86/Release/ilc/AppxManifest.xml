@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" xmlns:uap2="http://schemas.microsoft.com/appx/manifest/uap/windows10/2" xmlns:uap3="http://schemas.microsoft.com/appx/manifest/uap/windows10/3" xmlns:uap6="http://schemas.microsoft.com/appx/manifest/uap/windows10/6" xmlns:iot="http://schemas.microsoft.com/appx/manifest/iot/windows10" xmlns:uap4="http://schemas.microsoft.com/appx/manifest/uap/windows10/4" IgnorableNamespaces="uap mp uap2 uap3 uap6 iot uap4 build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    LE FICHIER MANIFESTE DE CE PACKAGE A ÉTÉ GÉNÉRÉ PAR LE PROCESSUS DE GÉNÉRATION.
+
+    Les modifications apportées à ce fichier seront perdues lors de la régénération. Pour corriger les erreurs présentes dans ce fichier, modifiez le fichier source .appxmanifest.
+
+    Pour plus d'informations sur les fichiers manifeste, consultez http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="3ad4b886-311b-4ae8-bda9-113b3ed821b0" Publisher="CN=Anthony" Version="1.0.0.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="3ad4b886-311b-4ae8-bda9-113b3ed821b0" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>NatWithOnto</DisplayName>
+    <PublisherDisplayName>Anthony</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17763.0" MaxVersionTested="10.0.18362.0" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.27810.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.Native.Framework.1.3" MinVersion="1.3.24211.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.Native.Runtime.1.4" MinVersion="1.4.24201.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="FR-FR" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="NatWithOnto.exe" EntryPoint="NatWithOnto.App">
+      <uap:VisualElements DisplayName="NatWithOnto" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="NatWithOnto" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
+    <uap2:Capability Name="spatialPerception" />
+    <uap:Capability Name="objects3D" />
+    <uap:Capability Name="blockedChatMessages" />
+    <uap3:Capability Name="backgroundMediaPlayback" />
+    <uap:Capability Name="userAccountInformation" />
+    <uap2:Capability Name="phoneCallHistoryPublic" />
+    <uap6:Capability Name="graphicsCapture" />
+    <iot:Capability Name="systemManagement" />
+    <uap4:Capability Name="offlineMapsManagement" />
+    <Capability Name="codeGeneration" />
+    <uap3:Capability Name="userNotificationListener" />
+    <uap:Capability Name="contacts" />
+    <uap:Capability Name="sharedUserCertificates" />
+    <uap:Capability Name="picturesLibrary" />
+    <uap:Capability Name="enterpriseAuthentication" />
+    <uap:Capability Name="musicLibrary" />
+    <uap:Capability Name="voipCall" />
+    <uap:Capability Name="appointments" />
+    <uap:Capability Name="removableStorage" />
+    <uap3:Capability Name="remoteSystem" />
+    <uap4:Capability Name="userDataTasks" />
+    <uap:Capability Name="videosLibrary" />
+    <DeviceCapability Name="webcam" />
+    <DeviceCapability Name="microphone" />
+    <DeviceCapability Name="pointOfService" />
+    <DeviceCapability Name="proximity" />
+    <DeviceCapability Name="gazeInput" />
+    <DeviceCapability Name="location" />
+    <DeviceCapability Name="bluetooth" />
+    <DeviceCapability Name="lowLevel" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="16.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2019" />
+    <build:Item Name="OperatingSystem" Version="10.0.18362.836 (WinBuild.160101.0800)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="16.0.30009.100" />
+    <build:Item Name="ProjectGUID" Value="{FC931F02-DF3B-4B32-8FB9-FBDBD2F7AA6F}" />
+    <build:Item Name="ilc.exe" Version="1.4.24211.07 built by: PROJECTNSVC2" />
+    <build:Item Name="OptimizingToolset" Value="ilc.exe" />
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="True" />
+    <build:Item Name="UniversalGenericsOptOut" Value="false" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="10.0.18362.1" />
+    <build:Item Name="MakePri.exe" Version="10.0.18362.1 (WinBuild.160101.0800)" />
+  </build:Metadata>
+</Package>

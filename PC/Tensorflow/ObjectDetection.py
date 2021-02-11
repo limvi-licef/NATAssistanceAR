@@ -52,7 +52,6 @@ def import_object_detection():
         if p not in sys.path:
             sys.path.append(p)
 
-
 """###############################################################################################"""
 ## load model categories from labelmap file
 # @param path string, path to the .pbtxt file
@@ -76,14 +75,14 @@ def load_model(path):
     # tensorflow code that load the graph
     detection_graph = tf.Graph()
     with detection_graph.as_default():
-        od_graph_def = tf.GraphDef()
-        with tf.gfile.GFile(path, 'rb') as fid:
+        od_graph_def = tf.compat.v1.GraphDef()
+        with tf.io.gfile.GFile(path, 'rb') as fid:
             serialized_graph = fid.read()
             od_graph_def.ParseFromString(serialized_graph)
             tf.import_graph_def(od_graph_def, name='')
 
         # the session to use
-        sess = tf.Session(graph=detection_graph)
+        sess = tf.compat.v1.Session(graph=detection_graph)
 
     #input tensor = where the frame must be sended
     image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
@@ -126,5 +125,5 @@ import_object_detection()
 import tensorflow as tf
 import numpy as np
 
-from utils import label_map_util
-from utils import visualization_utils
+from object_detection.utils import label_map_util
+from object_detection.utils import visualization_utils

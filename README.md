@@ -23,12 +23,10 @@ The two following section describe how to compile the PC and the Hololens applic
 - Install Anaconda for Python 3.xx : https://www.anaconda.com/distribution/#download-section
 - Install the GPU requirements for TensorFlow: https://www.tensorflow.org/install/gpu (at the time of writing, you need to install CUDA 10.0 to have tensorflow running in GPU)
 - In the Anaconda console, execute the following commands:
-  - pip install tensorflow-gpu==1.15 opencv-python PyGLM utils
-  (note that tensorflow 2.x is not supported yet. It works also with the CPU version of tensorflow, but it will be very slow, as it will be able to process only a few frames per second)
+  - pip install tensorflow-gpu opencv-python PyGLM utils
   - conda install protobuf
   - Go to the TensorFlow/Models local directory > research.
   - Execute the second command from the section 2f of https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10 (starting by "protoc ").
-- Execute the fo
 - In the file PC > Tensorflow > ObjectDetection.py, update the paths in the function "tensorflow_path" where "WRITE THE PATH OF TENSORFLOW ON THE COMPUTER HERE" is written to the TensorFlow/Models local directory.
 - In Jupyter, open PC > App.ipynb:
   - In the "Global variables > Model files and classes" section: set the variable "NUM_CLASSES" to 7 and "MODEL_DIRECTORY" to the path of where your trained model is (you can use for instance the "ModelsForNAT > model_3" provided in this repository)

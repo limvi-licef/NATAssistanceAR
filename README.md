@@ -19,7 +19,7 @@ To install and compile this project, first clone this repository.
 The two following section describe how to compile the PC and the Hololens applications.
 
 ### PC Application
-- Clone the TensorFlow/Models repository: https://github.com/tensorflow/models
+- Clone the TensorFlow/Models repository: https://github.com/tensorflow/models. Please revert to the following commit: 6f0e3a0bf5b4be72985d02d33b15a23c685b963b
 - Install Anaconda for Python 3.xx : https://www.anaconda.com/distribution/#download-section
 - Install the GPU requirements for TensorFlow: https://www.tensorflow.org/install/gpu (at the time of writing, you need to install CUDA 10.0 to have tensorflow running in GPU)
 - In the Anaconda console, execute the following commands:

@@ -11,6 +11,7 @@
 
 import os
 import sys
+import pathlib
 
 
 """###############################################################################################"""
@@ -18,8 +19,7 @@ import sys
 # must be completed before using tensorflow extra libraries
 def tensorflow_path():
     
-#     return "WRITE THE PATH OF TENSORFLOW ON THE COMPUTER HERE"
-    return "C:/MesProgrammes/TensorFlow"
+    return os.path.join(pathlib.Path(__file__).parent,'../../models/')
 
 
 """###############################################################################################"""
@@ -37,9 +37,6 @@ def object_detection_path():
 def import_object_detection():
     
     path = tensorflow_path()
-    default_path = "WRITE THE PATH OF TENSORFLOW ON THE COMPUTER HERE"
-    
-    assert path != default_path, "tensorflow path is not set in tensorflow_path() function from Tensorflow.lib"
     
     # path required for using object detection api
     paths = [

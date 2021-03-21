@@ -20,14 +20,11 @@ from Scenario.Base2D import BaseScenario2D
 import cv2
 import sys
 import numpy as np
+import os
 
 
 # # Global variables
 # ## Model files and classes
-
-# In[2]:
-
-
 # MODEL_DIRECTORY = "MODEL_DIRECTORY"
 MODEL_DIRECTORY = MODEL_DIRECTORY = os.path.join(os.path.abspath(''),"../ModelsForNAT/model_3")
 
@@ -37,39 +34,23 @@ NUM_CLASSES = 7
 
 
 # ## Scenario
-
-# In[3]:
-
-
 scenario = BaseScenario2D()
 
 
 # # Object detection configuration
 
 # ### Load model
-
-# In[4]:
-
-
 category_index = load_categories(LABELS, NUM_CLASSES)
 sess, inputs, outputs = load_model(GRAPH)
 
 
 # ### Set frame detector
-
-# In[5]:
-
-
 detector = ObjectDetector(sess, inputs, outputs, category_index)
 detector.SetThreshold(60)
 detector.draw = True
 
 
 # # Loop
-
-# In[ ]:
-
-
 camera = RemoteCam(10000, 3)
 
 while True:
@@ -89,10 +70,5 @@ while True:
 
 cv2.destroyAllWindows()
 camera.close()
-
-
-# In[ ]:
-
-
 
 

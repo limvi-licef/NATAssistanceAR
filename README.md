@@ -16,16 +16,18 @@ The project is ongoing and new functionalities are being implemented.
 
 ## Compilation
 To install and compile this project, first clone this repository.
+Dont forget to `git submodule update --init --recursive` in your work branch to pull available submodules.
 The two following section describe how to compile the PC and the Hololens applications.
 
 ### PC Application
 - Install Anaconda for Python 3.xx : https://www.anaconda.com/distribution/#download-section
 - Install the GPU requirements for TensorFlow: https://www.tensorflow.org/install/gpu (at the time of writing, you need to install CUDA 10.0 to have tensorflow running in GPU)
-- To create a conda environment: run this in a bash/cmd prompt: 
-  - conda env create environment.yml
-  - conda activate NATA
+- To create a conda environment, run this in a Bash shell (Linux) or in Anaconda Prompt (Windows): 
+  - `conda env create environment.yml`
+  - `conda activate NATA`
 - In the conda environment
-  - ./setup.sh
+  - `./setup.sh` (Linux)
+  - `cmd < setup.sh` (Windows)
 - In Jupyter, open PC > App.ipynb:
   - In the "Global variables > Model files and classes" section: set the variable "NUM_CLASSES" to 7 and "MODEL_DIRECTORY" to the path of where your trained model is (you can use for instance the "ModelsForNAT > model_3" provided in this repository)
   - In the "Global variables > Host and port" section: set the "HOST" variable to the local IP.

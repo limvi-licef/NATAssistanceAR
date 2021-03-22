@@ -3,7 +3,7 @@ channels:
   - defaults
 dependencies:
   - jupyter
-  - python=3.8.8=hdb3f193_4
+  - python=3.8
   - pip
   - protobuf
   - pip:
@@ -12,3 +12,4 @@ dependencies:
     - PyGLM
     - utils
     - websockets
+    - matplotlib

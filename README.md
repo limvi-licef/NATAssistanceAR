@@ -24,6 +24,8 @@ The two following section describe how to compile the PC and the Hololens applic
 - To create a conda environment: run this in a bash/cmd prompt: 
   - conda env create environment.yml
   - conda activate NATA
+- In the conda environment
+  - ./setup.sh
 - In Jupyter, open PC > App.ipynb:
   - In the "Global variables > Model files and classes" section: set the variable "NUM_CLASSES" to 7 and "MODEL_DIRECTORY" to the path of where your trained model is (you can use for instance the "ModelsForNAT > model_3" provided in this repository)
   - In the "Global variables > Host and port" section: set the "HOST" variable to the local IP.

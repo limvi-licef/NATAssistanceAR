@@ -5,6 +5,7 @@ dependencies:
   - jupyter
   - python=3.8.8=hdb3f193_4
   - pip
+  - protobuf
   - pip:
     - tensorflow-gpu 
     - opencv-python 

@@ -1,0 +1,15 @@
+name: NATA
+channels:
+  - defaults
+dependencies:
+  - jupyter
+  - python=3.8
+  - pip
+  - protobuf
+  - pip:
+    - tensorflow-gpu 
+    - opencv-python 
+    - PyGLM
+    - utils
+    - websockets
+    - matplotlib

@@ -145,11 +145,11 @@ class SimpleNATRelease(SimpleNATDebug):
     left_color = "gray"
     right_color = "gray"
     
-    
+    # I have commented this function
     ################################################################
-    def NewDetections(self):
+    #def NewDetections(self):
         
-        pass
+   #     pass
     
     
     ################################################################
@@ -186,16 +186,31 @@ class SimpleNATRelease(SimpleNATDebug):
     ################################################################
     def LeftAreaObject(self, obj, pos):
         
-        if self.Length(obj, "Right") < self.area_range:
+        #if self.Length(obj, "Right") < self.area_range:
+        #    self.right_error = True
+        
+        if self.Length(obj, "Left") < self.area_range:
+            self.socket.Draw("update_text", pos.x, pos.y, pos.z, obj, "green")
+        elif self.Length(obj, "Right") < self.area_range:
             self.right_error = True
-    
+            self.socket.Draw("update_text", pos.x, pos.y, pos.z, obj, "red")
+        else:
+            self.socket.Draw("update_text", pos.x, pos.y, pos.z, obj, "white")
+            
     
     ################################################################
     def RightAreaObject(self, obj, pos):
         
+        #if self.Length(obj, "Left") < self.area_range:
+        #    self.left_error = True
+        
         if self.Length(obj, "Left") < self.area_range:
             self.left_error = True
-            
+            self.socket.Draw("update_text", pos.x, pos.y, pos.z, obj, "red") 
+        elif self.Length(obj, "Right") < self.area_range:
+            self.socket.Draw("update_text", pos.x, pos.y, pos.z, obj, "green") 
+        else:
+            self.socket.Draw("update_text", pos.x, pos.y, pos.z, obj, "white")
     
     ################################################################
     def DistractorObject(self, obj, pos):
@@ -203,11 +218,11 @@ class SimpleNATRelease(SimpleNATDebug):
         self.LeftAreaObject(obj, pos)
         self.RightAreaObject(obj, pos)
             
-            
+     # I have commented this function       
     ################################################################
-    def OtherObjects(self, obj, pos):
+   # def OtherObjects(self, obj, pos):
         
-        pass
+     #   pass
     
         
         
